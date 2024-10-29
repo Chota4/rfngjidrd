@@ -1,0 +1,50 @@
+.container1 {
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(151, 153, 194);
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #7a78f8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.col-1 {
+    float: left;
+    width: 30%;
+    margin-top: 5px;
+}
+
+.col-2 {
+    float: left;
+    width: 70%;
+    margin-top: 5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.validation-error {
+    color: rgb(248, 130, 5);
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}

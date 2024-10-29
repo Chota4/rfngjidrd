@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pema.css">
+    <title>Student Form</title>
+</head>
+
+<body>
+    <div class="container1">
+        <h3>Student Detail Entry</h3>
+        <form id="studentForm" onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+            <div class="row">
+                <div class="col-1">
+                    <label>Student ID :</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="id" name="stdid" placeholder="STUDENT ID">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="name"> Student Name :* </label><br>
+                    <label class="validation-error hide" id="nameValidationError">Name cannot be Blank!</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="name" name="stdtname" placeholder="STUDENT NAME">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="email">Student Email :</label>
+                </div>
+                <div class="col-2">
+                    <input type="email" id="email" name="stdemail" placeholder="EMAIL">
+                </div>
+            </div><br>
+
+            <div>
+                <input type="submit" value="ADD">
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="container2 list">
+        <h3>Student List</h3>
+        <table id="stdList">
+            <thead>
+                <tr>
+                    <th>Std_ID</th>
+                    <th>Std_Name</th>
+                    <th>Std_Email</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="pema.js"></script>
+</body>
+</html>
